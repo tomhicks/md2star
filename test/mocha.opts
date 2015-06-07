@@ -1,0 +1,6 @@
+--ui bdd
+--reporter dot
+--compilers coffee:coffee-script/register
+--recursive
+--colors
+--watch-extensions coffee

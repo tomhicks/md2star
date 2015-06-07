@@ -1,0 +1,26 @@
+{
+  "name": "md2star",
+  "version": "0.0.0",
+  "description": "Convert a JSON ML tree to whatever you want",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "markdown",
+    "react",
+    "convert",
+    "tree",
+    "jsonml"
+  ],
+  "author": "Tom Hicks <tom.hicks@me.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^2.0.0",
+    "coffee-script": "^1.9.3",
+    "markdown": "^0.5.0",
+    "mocha": "^2.2.5",
+    "sinon": "^1.14.1",
+    "sinon-chai": "^2.7.0"
+  }
+}
