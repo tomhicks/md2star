@@ -1,6 +1,6 @@
 {
   "name": "murray",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Convert a JSON ML tree to whatever you want",
   "main": "index.js",
   "scripts": {
@@ -15,6 +15,13 @@
     "tree",
     "jsonml"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomhicks/md2star"
+  },
+  "bugs": {
+    "url": "https://github.com/tomhicks/md2star/issues"
+  },
   "author": "Tom Hicks <tom.hicks@me.com>",
   "license": "ISC",
   "devDependencies": {
