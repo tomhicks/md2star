@@ -47,3 +47,14 @@ text content renderer", ->
         expect(result)
           .to.equal "<p><a href=\"http://www.google.com\">linky</a></p>"
 
+    describe "rendering an item with no specified node renderer", ->
+
+      beforeEach ->
+        rendererMissingStuff =
+          join: (children) -> children
+          text: (text) -> text
+
+        @texasRanger = walker(rendererMissingStuff)
+
+      it "should throw explaining the missing renderer", ->
+        expect(=> @texasRanger("paragraph")).to.throw "'para' function"
