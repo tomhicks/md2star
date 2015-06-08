@@ -30,5 +30,8 @@
     "mocha": "^2.2.5",
     "sinon": "^1.14.1",
     "sinon-chai": "^2.7.0"
+  },
+  "dependencies": {
+    "markdown": "^0.5.0"
   }
 }

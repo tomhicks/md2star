@@ -21,13 +21,11 @@ HTML.
 ## Usage
 
 ```javascript
-var toTree = require('markdown').markdown.parse;
 var walker = require('murray');
 
 var markdownString = fs.readFileSync(pathToMarkdownFile).toString();
-var markdownTree = toTree(markdownString);
 
-var htmlString = walker(walker.htmlRenderer)(markdownTree);
+var htmlString = walker(walker.htmlRenderer)(markdownString);
 
 var myReactComponentRenderer = {
   join: function (items) { return items; }
@@ -40,7 +38,7 @@ var myReactComponentRenderer = {
   ...
 };
 
-var reactElement = walker(myReactComponentRenderer)(markdownTree);
+var reactElement = walker(myReactComponentRenderer)(markdownString);
 ```
 
 ## Name

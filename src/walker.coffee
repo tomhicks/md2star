@@ -1,3 +1,5 @@
+toTree = require("markdown").markdown.parse
+
 parseNode = require "./parse-node"
 
 renderNode = (renderer, node) ->
@@ -18,5 +20,8 @@ module.exports = (renderer) ->
   renderer.markdown = (children) -> children
 
   (rootNode) ->
+    if typeof rootNode is "string"
+      rootNode = toTree(rootNode)
+
     node = parseNode(rootNode)
     result = renderNode(renderer, node)
